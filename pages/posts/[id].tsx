@@ -17,6 +17,7 @@ export default function Post(props: { postData: IBlogInfo }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
+        {/* @ts-ignore */}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
